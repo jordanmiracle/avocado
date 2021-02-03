@@ -5,4 +5,4 @@ import pandas as pd
 
 data = pd.read_csv("avocado.csv")
 data = data.query("type")
-data["Date"] = pd.to_datetime()
+data["Date"] = pd.to_datetime(data["Date"],)
